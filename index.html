@@ -99,6 +99,9 @@ a:focus-visible{outline:2px solid var(--ink);outline-offset:3px}
 .smart hr{border:0;border-top:1px solid var(--line);margin:22px 0 16px}
 .smart .warn{font-size:13.5px;font-weight:700;margin:0;color:var(--ink)}
 
+#henrys{order:1}#lowkey{order:2}#alts{order:3}#workshop{order:4}#dinner{order:5}
+.alt-list{list-style:none;margin:18px 0 0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:10px}
+.alt-list li{display:flex;justify-content:space-between;align-items:center;gap:10px;background:var(--surface-2);border:1px solid var(--line);border-radius:14px;padding:12px 14px;font-size:14px;font-weight:500}
 @media (max-width:760px){
   .hero{grid-template-columns:1fr;padding:30px 0 24px}
   .places,.smart-grid{grid-template-columns:1fr}
@@ -140,16 +143,16 @@ a:focus-visible{outline:2px solid var(--ink);outline-offset:3px}
     <li><div class="row">
       <div class="when"><div class="dot"><svg viewBox="0 0 24 24"><path d="M5 9h11v5a4 4 0 0 1-4 4H9a4 4 0 0 1-4-4V9z"/><path d="M16 10h1.5a2.5 2.5 0 0 1 0 5H16"/></svg></div><div class="t"><div class="clock">11:00</div><small>약 1시간</small></div></div>
       <div class="item"><h3><span class="badge">필수</span>카페에서 시작</h3>
-        <p class="place">로우키 헤이그라운드점</p>
-        <p class="note">첫 만남 장소 · 커피와 함께 여유롭게 시작</p>
-        <div class="links"><a class="pill" href="#lowkey">장소 정보 보기</a></div></div>
+        <p class="place">헨리스플랏</p>
+        <p class="note">첫 만남 장소 · 브런치와 베이커리로 여유롭게 시작</p>
+        <div class="links"><a class="pill" href="#henrys">장소 정보 보기</a></div></div>
     </div></li>
 
     <li><div class="row">
       <div class="when"><div class="dot"><svg viewBox="0 0 24 24"><path d="M6 8h12l1 12H5L6 8z"/><path d="M9 8a3 3 0 0 1 6 0"/></svg></div><div class="t"><div class="clock">12:00</div><small>약 45분</small></div></div>
       <div class="item optional"><h3><span class="badge opt">선택</span>성수역 인근 쇼핑 / 산책</h3>
         <p class="place">한정선 · 올리브영N 성수 · 레퍼토리 · 29CM HOME · 자연도 소금빵 등</p>
-        <p class="note">성수역 4번 출구·연무장길 일대 자유 동선 · 12:45까지 헨리스플랏으로 이동</p>
+        <p class="note">성수역 4번 출구·연무장길 일대 자유 동선 · 12:45까지 카페(성수동 대림창고갤러리)로 이동</p>
         <div class="links">
           <a class="pill" href="https://naver.me/Fz8us9eb" target="_blank" rel="noopener noreferrer">전체 스팟 지도 보기</a>
           <a class="pill ghost" href="https://naver.me/F9N46G4y" target="_blank" rel="noopener noreferrer">한정선 성수</a>
@@ -162,18 +165,18 @@ a:focus-visible{outline:2px solid var(--ink);outline-offset:3px}
 
     <li><div class="row">
       <div class="when"><div class="dot"><svg viewBox="0 0 24 24"><path d="M7 3v8M5 3v5a2 2 0 0 0 4 0V3M7 11v10"/><path d="M17 3c-2 2-3 5-3 8h3v10"/></svg></div><div class="t"><div class="clock">13:00</div><small>약 1시간 30분–2시간</small></div></div>
-      <div class="item"><h3><span class="badge">필수</span>점심 / 카페</h3>
-        <p class="place">헨리스플랏</p>
-        <p class="note">공방 이동을 위해 14:40 전후 출발</p>
-        <div class="links"><a class="pill" href="#henrys">장소 정보 보기</a></div></div>
+      <div class="item"><h3><span class="badge">필수</span>카페</h3>
+        <p class="place">성수동 대림창고갤러리</p>
+        <p class="note">쇼핑/산책을 선택하지 않은 분들은 카페로 바로 이동해 대기할 수 있습니다 · 공방 이동을 위해 14:40 전후 출발</p>
+        <div class="links"><a class="pill" href="#lowkey">장소 정보 보기</a><a class="pill ghost" href="#alts">대체 카페 옵션 보기</a></div></div>
     </div></li>
 
     <li><div class="row">
       <div class="when"><div class="dot"><svg viewBox="0 0 24 24"><path d="M21 3 3 10.5l7 2.5 2.5 7L21 3z"/></svg></div><div class="t"><div class="clock">14:40</div><small>약 10–15분</small></div></div>
-      <div class="item"><h3><span class="badge move">이동</span>헨리스플랏 → 정근날</h3>
+      <div class="item"><h3><span class="badge move">이동</span>카페 → 정근날</h3>
         <p class="place">도보 이동</p>
         <p class="note">권장: 도보 · 우천·인원 지연 시 택시 이용 · 14:50까지 공방 도착</p>
-        <div class="links"><a class="pill ghost" href="https://map.kakao.com/?sName=%ED%97%A8%EB%A6%AC%EC%8A%A4%ED%94%8C%EB%A0%9B&eName=%EC%A0%95%EA%B7%BC%EB%82%A0%20%EC%84%B1%EC%88%98" target="_blank" rel="noopener noreferrer">길찾기 (카카오맵)</a></div></div>
+        <div class="links"><a class="pill ghost" href="https://map.kakao.com/?sName=%EC%84%B1%EC%88%98%EB%8F%99%20%EB%8C%80%EB%A6%BC%EC%B0%BD%EA%B3%A0%EA%B0%A4%EB%9F%AC%EB%A6%AC&eName=%EC%A0%95%EA%B7%BC%EB%82%A0%20%EC%84%B1%EC%88%98" target="_blank" rel="noopener noreferrer">길찾기 (카카오맵)</a></div></div>
     </div></li>
 
     <li><div class="row">
@@ -205,21 +208,21 @@ a:focus-visible{outline:2px solid var(--ink);outline-offset:3px}
 
 <section class="places" aria-label="장소 정보">
   <article class="card place-card" id="lowkey">
-    <div class="label"><svg viewBox="0 0 24 24"><path d="M5 9h11v5a4 4 0 0 1-4 4H9a4 4 0 0 1-4-4V9z"/><path d="M16 10h1.5a2.5 2.5 0 0 1 0 5H16"/></svg>START CAFE</div>
-    <h3>로우키 헤이그라운드점</h3>
-    <p>스페셜티 커피를 중심으로 운영하는 로우키의 성수 카페입니다. 헤이그라운드 성수시작점 1층에서 팀 캔미팅의 첫 만남을 시작합니다.</p>
-    <div class="addr"><svg viewBox="0 0 24 24"><path d="M12 21s7-6.2 7-11.5A7 7 0 0 0 5 9.5C5 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>서울특별시 성동구 뚝섬로1나길 5, 1층</div>
+    <div class="label"><svg viewBox="0 0 24 24"><path d="M5 9h11v5a4 4 0 0 1-4 4H9a4 4 0 0 1-4-4V9z"/><path d="M16 10h1.5a2.5 2.5 0 0 1 0 5H16"/></svg>CAFE</div>
+    <h3>성수동 대림창고갤러리</h3>
+    <p>성수동 공장 골목에 자리한 갤러리 카페입니다. 옛 창고를 리모델링해 전시와 커피를 함께 즐길 수 있는 복합문화공간으로 쓰이고 있습니다.</p>
+    <div class="addr"><svg viewBox="0 0 24 24"><path d="M12 21s7-6.2 7-11.5A7 7 0 0 0 5 9.5C5 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>서울특별시 성동구 성수이로 78</div>
     <div class="cta">
-      <span class="price-chip">1인 약 6천~7천원</span>
-      <a class="pill" href="https://naver.me/GHvqC1QV" target="_blank" rel="noopener noreferrer">네이버 지도</a>
-      <a class="pill ghost" href="https://map.kakao.com/?q=%EC%84%9C%EC%9A%B8%ED%8A%B9%EB%B3%84%EC%8B%9C%20%EC%84%B1%EB%8F%99%EA%B5%AC%20%EB%9A%9D%EC%84%AC%EB%A1%9C1%EB%82%98%EA%B8%B8%205" target="_blank" rel="noopener noreferrer">카카오맵</a>
+      
+      <a class="pill" href="https://naver.me/G2EwpeQi" target="_blank" rel="noopener noreferrer">네이버 지도</a>
+      <a class="pill ghost" href="https://map.kakao.com/?q=%EC%84%B1%EC%88%98%EB%8F%99%20%EB%8C%80%EB%A6%BC%EC%B0%BD%EA%B3%A0%EA%B0%A4%EB%9F%AC%EB%A6%AC" target="_blank" rel="noopener noreferrer">카카오맵</a>
     </div>
   </article>
 
   <article class="card place-card" id="henrys">
-    <div class="label"><svg viewBox="0 0 24 24"><path d="M7 3v8M5 3v5a2 2 0 0 0 4 0V3M7 11v10"/><path d="M17 3c-2 2-3 5-3 8h3v10"/></svg>LUNCH / CAFE</div>
+    <div class="label"><svg viewBox="0 0 24 24"><path d="M7 3v8M5 3v5a2 2 0 0 0 4 0V3M7 11v10"/><path d="M17 3c-2 2-3 5-3 8h3v10"/></svg>START CAFE</div>
     <h3>헨리스플랏</h3>
-    <p>영국 가정집 분위기를 콘셉트로 한 성수의 영국식 베이커리 카페입니다. 브런치와 베이커리, 티와 커피를 함께 즐길 수 있습니다.</p>
+    <p>영국 가정집 분위기를 콘셉트로 한 성수의 영국식 베이커리 카페입니다. 브런치와 베이커리, 티와 커피를 함께 즐길 수 있습니다. 팀 캔미팅의 첫 만남을 시작합니다.</p>
     <div class="addr"><svg viewBox="0 0 24 24"><path d="M12 21s7-6.2 7-11.5A7 7 0 0 0 5 9.5C5 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>서울특별시 성동구 뚝섬로 427-8</div>
     <div class="cta">
       <span class="price-chip">1인 약 1.8만~2만원</span>
@@ -239,7 +242,21 @@ a:focus-visible{outline:2px solid var(--ink);outline-offset:3px}
       <a class="pill ghost" href="https://map.kakao.com/?q=%EC%84%9C%EC%9A%B8%ED%8A%B9%EB%B3%84%EC%8B%9C%20%EC%84%B1%EB%8F%99%EA%B5%AC%20%EC%84%B1%EC%88%98%EC%9D%B4%EB%A1%9C16%EA%B8%B8%2021" target="_blank" rel="noopener noreferrer">카카오맵</a>
     </div>
   </article>
-<article class="card place-card" id="dinner">
+<article class="card place-card wide" id="alts">
+    <div class="label"><svg viewBox="0 0 24 24"><path d="M5 9h11v5a4 4 0 0 1-4 4H9a4 4 0 0 1-4-4V9z"/><path d="M16 10h1.5a2.5 2.5 0 0 1 0 5H16"/></svg>ALTERNATIVE CAFES</div>
+    <h3>대체 카페 옵션</h3>
+    <p>13:00 카페를 이용하기 어려울 때 선택할 수 있는 성수 인근 카페입니다.</p>
+    <ul class="alt-list">
+      <li><span>에어드랍 커피 성수</span><a class="pill ghost" href="https://naver.me/xjgceHTp" target="_blank" rel="noopener noreferrer">네이버 지도</a></li>
+      <li><span>맥파이앤타이거 성수 티룸</span><a class="pill ghost" href="https://naver.me/xhzCIbhn" target="_blank" rel="noopener noreferrer">네이버 지도</a></li>
+      <li><span>브래빌카페앤스토어 성수</span><a class="pill ghost" href="https://naver.me/GScHl8xu" target="_blank" rel="noopener noreferrer">네이버 지도</a></li>
+      <li><span>루프 베이커리 카페</span><a class="pill ghost" href="https://naver.me/xxY2USDZ" target="_blank" rel="noopener noreferrer">네이버 지도</a></li>
+      <li><span>로우키 성수점</span><a class="pill ghost" href="https://naver.me/5N15kFIf" target="_blank" rel="noopener noreferrer">네이버 지도</a></li>
+      <li><span>달임막</span><a class="pill ghost" href="https://naver.me/xTT61haa" target="_blank" rel="noopener noreferrer">네이버 지도</a></li>
+    </ul>
+  </article>
+
+  <article class="card place-card" id="dinner">
     <div class="label"><svg viewBox="0 0 24 24"><path d="M7 3v8M5 3v5a2 2 0 0 0 4 0V3M7 11v10"/><path d="M17 3c-2 2-3 5-3 8h3v10"/></svg>DINNER</div>
     <h3>비스타 워커힐 서울 더뷔페</h3>
     <p>워커힐에서 진행하는 팀 캔미팅의 저녁 장소입니다. 뷔페 식사로 하루를 마무리합니다. 18:00 도착을 목표로 17:00 성수에서 정시 출발해 주세요.</p>
@@ -253,9 +270,9 @@ a:focus-visible{outline:2px solid var(--ink);outline-offset:3px}
 <section class="smart" aria-label="이동 안내">
   <span class="eyebrow">MOVE SMART</span>
   <div class="smart-grid">
-    <div><h4>성수역 인근 선택 코스</h4><p>한정선, 올리브영N 성수, 레퍼토리, 29CM HOME, 자연도 소금빵 등 성수역 4번 출구·연무장길 일대를 자유롭게 둘러보세요. 12:45까지 헨리스플랏 이동을 시작해 주세요.</p>
+    <div><h4>성수역 인근 선택 코스</h4><p>한정선, 올리브영N 성수, 레퍼토리, 29CM HOME, 자연도 소금빵 등 성수역 4번 출구·연무장길 일대를 자유롭게 둘러보세요. 12:45까지 카페(성수동 대림창고갤러리) 이동을 시작해 주세요. 쇼핑/산책을 선택하지 않은 분은 카페로 바로 이동해 대기하셔도 됩니다.</p>
       <div class="links"><a class="pill" href="https://naver.me/Fz8us9eb" target="_blank" rel="noopener noreferrer">전체 스팟 지도 보기</a></div></div>
-    <div><h4>헨리스플랏 → 정근날</h4><p>도보 약 10–15분입니다. 14:40 전후 출발하여 14:50까지 공방 도착을 목표로 합니다.</p></div>
+    <div><h4>카페 → 정근날</h4><p>도보 약 10–15분입니다. 14:40 전후 출발하여 14:50까지 공방 도착을 목표로 합니다.</p></div>
   </div>
   <hr>
   <p class="warn">성수역 인근 선택 코스는 도보 이동에 적합합니다. 우천, 보행 불편, 인원 분산 또는 지연 시에는 택시를 이용해 주세요.</p>
